@@ -1,0 +1,26 @@
+<!--#include virtual="/html/doc_start.html" -->
+
+		<title>Movie Palace</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Behnam Behjoo" />
+
+		<link rel="stylesheet" href="/src/index/index.css" type="text/css">
+
+<!--#include virtual="/html/body_start.html" -->
+
+	<div class="head-slider-container">
+		<div class="imgHolder">
+			<div class="holder-fix">
+				<img src="/images/movies/Grey.jpg" />
+			</div>
+		</div>
+		<div class="outPut">
+			
+		</div>
+	</div>
+
+<!--#include virtual="/html/body_end.html" -->
+		
+	<script type="text/javascript" src="/src/index/index.js"></script>
+	
+<!--#include virtual="/html/doc_end.html" -->

@@ -1,0 +1,9 @@
+document.writeln("<scr" + "ipt type='text/javascript' src='/src/lib/jquery-1.7.2.min.js'></scr" + "ipt>");
+document.writeln("<scr" + "ipt type='text/javascript' src='/src/lib/Class.js'></scr" + "ipt>");
+document.writeln("<scr" + "ipt type='text/javascript' src='/src/movies/main.js'></scr" + "ipt>");
+document.writeln("<scr" + "ipt type='text/javascript' src='/html/topNav/topNav.js'></scr" + "ipt>");
+document.writeln("<scr" + "ipt type='text/javascript' src='/src/Base.js'></scr" + "ipt>");
+//document.writeln("<scr" + "ipt type='text/javascript' src='/html/footer/footer.js'></scr" + "ipt>");
+//document.writeln("<scr" + "ipt type='text/javascript' src='/html/topNav/topNav.js'></scr" + "ipt>");
+document.writeln("<scr" + "ipt type='text/javascript' src='/src/func/Slider.js'></scr" + "ipt>");
+document.writeln("<scr" + "ipt type='text/javascript' src='/src/func/temp.js'></scr" + "ipt>");
