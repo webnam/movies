@@ -87,6 +87,10 @@
 	float: none;
 }
 
+.other-search-list .torrents a:first-child {
+	margin-top: 10px;
+}
+
 .other-search-list div.arrow-container {
 	margin-left: 11px;
 	float: left;

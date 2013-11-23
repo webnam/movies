@@ -16,7 +16,7 @@ com_movies.Main.overlays.Slider = ( function( global ){
 				// e.preventDefault();
 				e.stopPropagation();
 
-				$.bbq.pushState("newMovie");
+				// $.bbq.pushState("newMovie");
 
 				// alert($.bbq.getState("newMovie"));
 

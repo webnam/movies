@@ -75,7 +75,7 @@ com_movies.Main.overlays.otherSearchList = (function(){
 				_movie = $( self ).attr( "id" );
 			
 				Main.tpldata = Main.data.Movies[ _movie ];
-				window.location.replace( "#movie=" + _movie );
+				window.location.replace( "#newMovie=" + _movie );
 				Main.overlayInstance = "old-movie-trailer";
 				_template = "html_oldMovieTrailers";
 				_obj = com_movies.Main.overlays.oldMovieTrailers;

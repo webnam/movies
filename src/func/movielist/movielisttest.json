@@ -8,6 +8,7 @@
          "blurryImage":"delivery_man_blurry.jpg",
          "largeImage":"delivery_man.jpg",
          "trailer":"yGAktL45XNQ",
+         "scheme": "dark",
          "active_links":[
             "imdb"
          ],
@@ -105,6 +106,7 @@
          "largeImage":"bestman.jpg",
          "trailer":"k6iNiJivOOQ",
          "text":"Gravity Movie",
+         "scheme": "dark",
          "active_links":[
             "imdb"
          ],
@@ -137,6 +139,7 @@
          "largeImage":"12years_a_slave.jpg",
          "trailer":"z02Ie8wKKRg",
          "text":"Gravity Movie",
+         "scheme": "dark",
          "active_links":[
             "imdb"
          ],
@@ -201,6 +204,7 @@
          "largeImage":"last_vegas.jpg",
          "trailer":"TvK3m0wJutI",
          "text":"Gravity Movie",
+         "scheme": "dark",
          "active_links":[
             "imdb"
          ],
@@ -692,6 +696,7 @@
          "active_links":[
             "imdb",
             "amazon",
+            "torrent",
             "redbox"
          ],
          "amazon":{
@@ -711,15 +716,15 @@
          },
          "torrent":[
             {
-               "name":"TORRENT",
+               "name":"Torrent",
                "url":"http:\/\/thepiratebay.sx\/torrent\/8939972\/After.Earth.2013.BDRip.X264-SPARKS"
             },
             {
-               "name":"TORRENT",
+               "name":"Torrent",
                "url":"http:\/\/kickass.to\/after-earth-2013-1080p-brrip-x264-yify-t7897370.html"
             },
             {
-               "name":"TORRENT",
+               "name":"Torrent",
                "url":"http:\/\/kickass.to\/after-earth-2013-1080p-bluray-dts-x264-publichd-t7896555.html"
             }
          ]

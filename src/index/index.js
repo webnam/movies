@@ -59,7 +59,6 @@ com_movies.Home = ( function() {
 					})
 
 					$( ".image" ).on( "click", _clickHanler )
-				
 					// var tmpItems = [];
 					// $.each( Main.data.Movies, function( key, val ) {
 					// 	if( val.newMovie ){
