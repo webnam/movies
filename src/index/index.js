@@ -59,6 +59,7 @@ com_movies.Home = ( function() {
 					})
 
 					$( ".image" ).on( "click", _clickHanler )
+
 					// var tmpItems = [];
 					// $.each( Main.data.Movies, function( key, val ) {
 					// 	if( val.newMovie ){
@@ -72,10 +73,11 @@ com_movies.Home = ( function() {
 					// 			_class = "last";
 					// 		}
 
-					// 		tmpItems.push( "<a href='#'>" + val.moviename + "</a><br />" );						
+					// 		tmpItems.push( val.moviename + "<br />" );						
 					// 	}
 					// });
 					// $( ".container" ).append( tmpItems.join( "" ) );
+
 			    }
 
 			});
@@ -105,14 +107,14 @@ com_movies.Home = ( function() {
 
 				$( ".movie_info" ).addClass( "show" )
 					.animate( { "height": 100 + "px" }, 600, function(){
-						$( this ).find( "a" ).hover(
-							function() {
-								$( this ).stop().animate( { "color": "#00ccff" } );
-							},
-							function() {
-								$( this ).stop().animate( { "color": "#ffffff" } );
-							}
-						).end()
+						// $( this ).find( "a" ).hover(
+						// 	function() {
+						// 		$( this ).stop().animate( { "color": "#00ccff" } );
+						// 	},
+						// 	function() {
+						// 		$( this ).stop().animate( { "color": "#ffffff" } );
+						// 	}
+						// ).end()
 
 						that._movieSlider = new com_movies.Main.overlays.Slider();
 					});
@@ -121,8 +123,6 @@ com_movies.Home = ( function() {
 				e.stopPropagation();
 				$( ".image" ).removeClass( "active" )
 				$( ".blurry" ).fadeOut();
-					// .animate({boxShadow: '0 0 5px'})
-					// .find( "img" ).stop().animate( { "opacity": "1", boxShadow: '0 0 5px' } )
 				$this.addClass( "active" )
 					.find( ".blurry" ).fadeIn( 800 );
 			}
@@ -223,38 +223,6 @@ com_movies.Home = ( function() {
 					$( ".movie-search-container" ).addClass( "active" );
 				} );	
 
-			// function outPutClickHandler() {
-			// 	var _template,
-			// 		_obj;
-
-			// 	$( ".movie-search-container, .image" ).removeClass( "active" );
-			// 	$( ".movie_info" ).removeClass( "show" );
-
-			// 		var _movie = $( this ).attr( "id" );
-			// 		// $.getJSON( "../src/func/movielist/movielisttest.json", function( data ) {
-			// 		Main.tpldata = Main.data.Movies[ _movie ];
-			// 			if( Main.tpldata.newMovie ) {
-			// 				window.location.replace( "#newMovie=" + _movie )
-			// 				Main.overlayInstance = "movie-trailer";
-			// 				_template = "html_movieTrailers";
-			// 				_obj = com_movies.Main.overlays.movieTrailers;
-			// 			}
-			// 			else {
-			// 		window.location.replace( "#movie=" + _movie );
-			// 		that.hideOverlay();
-			// 		Main.overlayInstance = "old-movie-trailer";
-			// 		_template = "html_oldMovieTrailers";
-			// 		_obj = com_movies.Main.overlays.oldMovieTrailers;
-			// 			}
-			// 		that.showOverlay( _template, Main.tpldata );
-			// 		that._movie = new _obj();
-
-			// 		} );
-				
-			// 	// alert( _template );
-			//     //Your code here
-			// };
-
 			$( ".movie-search-container" ).click( function( e ) {
 				e.stopPropagation();
 			} )
@@ -263,8 +231,6 @@ com_movies.Home = ( function() {
 				$( ".movie-search-container" ).removeClass( "active" )
 					.find( ".search-output" ).html( "" );
 				$( ".image.active" ).removeClass( "active" )
-					// .animate( { boxShadow: '0 0 5px' } )
-					// .find( "img" ).animate( { "opacity": "1", boxShadow: '0 0 5px' } );
 				$( ".movie_info" ).removeClass( "show" );
 				$( ".blurry" ).fadeOut();
 			} )
