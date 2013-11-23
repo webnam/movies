@@ -2,7 +2,7 @@
  * @author Behnam Behjoo
  */
 
-//var com_movies = com_movies || {};
+var com_movies = com_movies || {};
 
 com_movies.topNav = (function(){
 	return {

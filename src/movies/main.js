@@ -2,50 +2,75 @@
  * @author Behnam Behjoo
  */
 
-var com_movies = com_movies || {};
+var com_movies = com_movies || {},
+	Main = {
+		namespace: ""
+	,	overlayInstance: ""
+	,	instance: null 		
+	};
 
 com_movies.Main = (function(){
+	Main.namespace = "com_movies.Main";
+
 	return Class.extend({
-		name: "main"
-	,
-		init: function(){
-			// alert( this.name );
+		namespace: "com_movies.Main"
+	,	overlays: {}	
+	,	functions: {}
+	,	init: function(){
 			var
 				that = this
 			;
-			
+
 			$(document).ready(function(){
 				that.load();
 			})
 		}
 	
 	,	load: function(){
-		
-			var
-				el = $( ".outPut" )
-			,	input = $( "" )
-			;
-			
-			if( el.length > 0 ){
-				alert( "exist" );
+			var that = this;
+			$( "#wrapper" ).on( "click", ".overlay-background", function( e ) {
+				e.stopPropagation();
 				
-			}
-		
-			addChild({
-					element: "html_topNav"
-				,	data: com_movies.topNav.set()
-				,	container: ".topNav-container"
-			})
-			
-			function addChild( params ){
-				alert( params.data.home );
-				//$( "#" + params.container ).append( $( params.footer.getNode() ) );
-				//alert( params.element );
-				$( params.container ).html( tmpl( params.element, params.data ) );
+				that.hideOverlay();
+			} )
+		}
+
+	,	addChild: function( params ) {
+			alert( params.data.home );
+			//$( "#" + params.container ).append( $( params.footer.getNode() ) );
+			//alert( params.element );
+			$( params.container ).html( tmpl( params.element, params.data ) );
 				
+		}
+	,	showOverlay: function( targetId, obj ) {
+			this.updateChild( Main.overlayInstance, targetId, obj )
+
+			if( Main.overlayInstance == "other-search-list" ) {
+				$( ".background-blurry" ).fadeIn( 800 );
+				// $( "#index .content" ).css( "visibility", "hidden" );
+				$( "." + Main.overlayInstance ).fadeIn( 800 );
 			}
+			else {
+
+				$( ".overlay-background" ).fadeIn( function() {
+					$( "." + Main.overlayInstance ).fadeIn();
+				} );
+			}
+				
+		}
+	,	hideOverlay: function() {
+			$( ".overlay-background, ." + Main.overlayInstance ).fadeOut();
+			$( "." + Main.overlayInstance ).html( "" );
+			// $( ".background-blurry" ).fadeOut();
+			// $( "#index .content" ).css( "opacity", "1" );
+			$( ".searchbox-container .searchbox-background" ).animate({"opacity": "0.8"});
+			$( ".searchbox-container input" ).val("FIND YOUR MOVIE")
+				.removeClass("active");
+				
 		}
 	})
-})();
+})( this );
 
-com_movies.main = new com_movies.Main();
+com_movies.Main.overlays = com_movies.Main.overlays || {};
+
+// com_movies.main = new com_movies.Main();

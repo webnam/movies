@@ -1,0 +1,101 @@
+.old-movie-trailer {
+	display: none;
+	margin-left: -320px;
+	z-index: 100;
+	left: 50%;
+	top: 20%;
+	position: fixed;
+	background-image: url(/images/index/movie_detail_bkrd.png);
+	height: 360px;
+	width: 640px;
+}
+
+.old-movie-trailer .links-container {
+	opacity: 0.3;
+	padding: 20px 50px 0px 50px;
+	color: #ffffff;
+}
+
+.old-movie-trailer .video-container {
+}
+
+.old-movie-trailer .links-container ul li {
+	font-size: 12px;
+	letter-spacing: 5px;
+	margin-right: 50px;
+	float: left;
+}
+
+.old-movie-trailer .links-container ul li.last {
+	margin-right: 0px;
+}
+
+.old-movie-trailer .links-container ul li a:hover {
+	cursor: pointer;
+}
+
+.old-movie-trailer .links-container ul:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.old-movie-trailer .links-container ul li.last {
+	cursor: pointer;
+	padding-right: 25px;
+	position: relative;
+}
+
+.old-movie-trailer .links-container ul li.last div.arrow-container {
+	overflow: hidden;
+	height: 18px;
+	width: 15px;
+	left: 100px;
+	top: 4px;
+	position: absolute;
+}
+
+.old-movie-trailer .links-container ul li.last div.arrow {
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	left: 0px;
+	top: -10px;
+	height: 15px;
+	width: 15px;
+	background: #ffffff;
+	position: relative;
+}
+
+.old-movie-trailer .links-container ul li.last div.torrent-links {
+	overflow: hidden;
+	height: 0px;
+	font-size: 11px;
+	left: 0px;
+	top: 25px;
+	position: absolute;
+}
+
+.old-movie-trailer .links-container ul li.last div.torrent-links li {
+	height: 15px;
+}
+
+.old-movie-trailer .links-container ul li.last div ul li {
+	width: 120px;
+	float: none;
+	margin: 0px;
+}
+
+.old-movie-trailer .close {
+	opacity: 0.3;
+	left: 640px;
+	top: -25px;
+	position: absolute;
+	height: 25px;
+	background: url( /images/close_btn.png ) no-repeat;
+	margin: auto;
+	width: 25px;
+	color: #ffffff;
+}

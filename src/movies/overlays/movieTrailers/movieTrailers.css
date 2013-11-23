@@ -1,0 +1,16 @@
+.movie-trailer {
+	z-index: 100;
+	display: none;
+	margin-left: -330px;
+	height: 360px;
+	width: 640px;
+	left: 50%;
+	top: 160px;
+	position: fixed;
+	background: transparent;	
+}
+
+.movie-trailer .close {
+	left: 640px;
+	top: -25px;
+}

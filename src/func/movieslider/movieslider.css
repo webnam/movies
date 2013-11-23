@@ -1,0 +1,45 @@
+.head-slider-container{
+	position: relative;
+	/*background-color: #555555;*/
+	width: 100%;
+	height: 300px;
+}
+
+.movie_info .last input {
+	/*text-shadow: 0px 0px 2px #000000;*/
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 21px #FFFFFF inset;
+    padding: 5px;
+    width: 65px;
+}
+
+.movie_info .last {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	font-size: 11px;
+}
+
+.movie_info .last a {
+	margin-top: 4px;
+	display: block;
+}
+
+.head-slider-container .imgHolder{
+	height: 300px;
+	position: relative;
+	width: 300px;
+	margin: auto;
+}
+
+.head-slider-container .imgHolder .holder-fix{
+	top: 50%;
+	margin-top: -100px;
+	position: absolute;
+}
+
+.head-slider-container img{
+	height: 200px;
+	width: 300px;
+}

@@ -1,1 +1,18 @@
+
+	<script type="text/javascript">
+
+		Main.handler = ( function( obj ) {
+			var _instance = window,
+				objArr = obj.split( "." ),
+				len = objArr.length,
+				i;
+
+			for ( i = 0; i < len; i++ ) {
+				_instance = _instance[ objArr[ i ] ];
+			};
+
+			Main.instance = new _instance();
+		}) ( Main.namespace );
+	</script>
+
 </html>

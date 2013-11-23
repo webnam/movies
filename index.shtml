@@ -1,22 +1,50 @@
 <!--#include virtual="/html/doc_start.html" -->
 
 		<title>Movie Palace</title>
-		<meta name="description" content="" />
+		<meta name="description" content="Freshest Flixs, Know When The Latest Is Coming" />
+		<meta name="keywords" content="Movies, Latest movies, New Movies, Fresh Flix, Freshest Flix, Know When Latest Is Coming" />
 		<meta name="author" content="Behnam Behjoo" />
 
 		<link rel="stylesheet" href="/src/index/index.css" type="text/css">
 
 <!--#include virtual="/html/body_start.html" -->
 
-	<div class="head-slider-container">
-		<div class="imgHolder">
-			<div class="holder-fix">
-				<img src="/images/movies/Grey.jpg" />
+	<div id="index">
+
+		<div class="content">
+
+			<div class="topNav-container">
+				<ul id="topNav">
+					<li>BEST MOVIES UPDATES<br /><span>KNOW WHAT'S COMING</span></li>
+				</ul>
+				<div class="movie-search-container">
+					<form>
+						<input value="SEARCH FOR A MOVIE" type="text" class="movie-search" name="search" autocomplete="off" />
+					</form>
+					<div class="search-output"></div>
+				</div>
 			</div>
-		</div>
-		<div class="outPut">
+
+			<div class="img-container">
 			
+				<span class="movie_info"></span>
+
+			</div>
+
+			<div class="img-containe">
+			</div>
+
+			<br /><br />
+
+			<?php echo phpinfo() ?>
+
+			<!-- a href="https://www.facebook.com/sharer/sharer.php?u=http://www.flex.com" target="_blank">
+ Share on Facebook
+</a -->
+
 		</div>
+
+			
 	</div>
 
 <!--#include virtual="/html/body_end.html" -->

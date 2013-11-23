@@ -2,9 +2,12 @@
  * @author Behnam Behjoo
  */
 
-com_movies.Slider = ( function( global ){
+com_movies.Main.functions.Slider = ( function( global ){
+
+	Main.namespace = "com_movies.Main.functions.Slider";
+
 	return com_movies.Base.extend({
-		name: "Slider"
+		namespace: "com_movies.Main.functions.Slider"
 	,	load: function(){
 			
 		}

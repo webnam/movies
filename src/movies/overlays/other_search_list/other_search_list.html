@@ -1,0 +1,46 @@
+<script type="text/html" id="html_otherSearchList">
+	<div class="searchbox-background"></div>
+	<div class="content">
+		<ul>
+			<%
+				var i,
+					j,
+					currMovie;
+				for ( i = 0; i < Main.tpldata.length; i++ ) {
+					currMovie = Main.tpldata[i];
+			%>
+			<li>
+				<div class="header-container">
+					<img src="/images/movies/small/<%=currMovie.smallImage%>" />
+					<span class="movie-title"><%=currMovie.outputName%></span>
+				</div>
+				<div class="arrow-container"><div class="arrow"></div></div>
+				<div class="button-container">
+				<a href="#" class="show-trailer" id="<%=currMovie.movieId%>">Trailer</a>
+					<% 
+						for ( j = 0; j < currMovie.active_links.length; j++ ) {
+							var _linkName = currMovie.active_links[j],
+								_tmpObj = currMovie[currMovie.active_links[j]];
+							if ( _linkName == "torrent" ) {
+					%>
+								<div class="torrents">Torrents
+					<%
+								var _nr = 0;
+								for ( var _t = 0; _t < _tmpObj.length; _t++ ) {
+					%>				
+									<a href="<%=_tmpObj[_t].url%>" target="_blank"><%=_tmpObj[_t].name%> <%=_t + 1%></a>
+					<%			} %>
+								</div>
+					<%		}
+							else {
+					%>
+								<a href="<%=_tmpObj.url%>" target="_blank"><%=_tmpObj.name%></a>
+							<% } %>
+					<% } %>
+				</div>
+			</li>
+			<% } %>
+		</ul>
+	</div>
+	<div class="close"></div>
+</script>

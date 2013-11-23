@@ -1,0 +1,32 @@
+<script type="text/html" id="html_oldMovieTrailers">
+	<div class="video-container">
+		<iframe width="640" height="360" src="//www.youtube.com/embed/<%=Main.tpldata.trailer%>?autoplay=1" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="links-container">
+		<ul>
+			<%
+				for (var j = 0; j < Main.tpldata.active_links.length; j++) {
+					var _currentLink = Main.tpldata.active_links[ j ]; 
+						_currentLink = Main.tpldata[ _currentLink ]; %>
+
+					<li><a href="<%=_currentLink.url%>" class="<%=_currentLink.class%>" target="_blank"><%=_currentLink.name%></a></li>
+
+				<% }; %>
+
+			<%
+				if ( Main.tpldata.torrent ) { %>
+					<li class="last">
+						TORRENT<div class="arrow-container"><div class="arrow"></div></div>
+						<div class="torrent-links">
+							<% 
+								var _l = Main.tpldata.torrent.length;
+								for( var i = 0; i < _l; i++ ) { %>
+								<a href="<%=Main.tpldata.torrent[i].url%>" target="_blank"><%=Main.tpldata.torrent[i].name%> <%=i + 1%></a><br />
+							<% } %>
+						</div>
+					</li>
+			<% } %>
+		</ul>
+	</div>
+	<div class="close"></div>
+</script>

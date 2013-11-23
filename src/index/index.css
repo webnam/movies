@@ -1,4 +1,279 @@
-#page{
-	width: 100%; 
+
+#index {
+	height: 100%;
+	/*height: 100%;*/
+	/*background: url(/images/main_background2.jpg) 0px -225px;*/
 }
 
+#index .content {
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+#index .img-container {
+	padding-top: 5px;
+	overflow: auto;
+	z-index: 1;
+	position: relative;
+	margin: 30px auto 0px;
+	width: 1050px;
+}
+
+#index .img-container .images {
+	margin-bottom: 20px;
+}
+
+#index .img-container .images:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+#index .img-container .image {
+	margin-bottom: 20px;
+	/*background-color: #000050;*/
+	background-image: url(/images/index/movie_detail_bkrd.png);
+	position: relative;
+	z-index: 1;
+	height: 230px;
+	margin-left: 30px;
+	border-radius: 5px;
+	padding: 20px;
+	width: 200px;
+	float: left;
+}
+
+#index .img-container .image.active {
+	/*box-shadow: inset 0px 0px 0px #000000;*/
+}
+
+#index .img-container .image:hover {
+	cursor: pointer;
+}
+
+/*#index .img-container .image.active img {
+	opacity: 0.2;
+	/*border-radius: 5px 5px 0px 0px;
+}*/
+
+#index .img-container .image.first {
+	margin-left: 0px;
+}
+
+#index .img-container .image.last:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+#index .img-container .image img {
+	box-shadow: 0px 0px 4px #000000;
+	width: 200px;
+}
+
+#index .img-container .image img.blurry {
+	display: none;
+	left: 20px;
+	top: 20px;
+	position: absolute;
+}
+
+#index .img-container .image > div {
+	height: 47px;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: 0 0 8px #000044;
+	letter-spacing: 6px;
+	/*margin-top: 8px;*/
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+}
+
+#index .img-container .image div.title {
+	position: relative;
+	top: 50%;
+}
+
+#index .img-container .movie_info {
+	height: 0px;
+	z-index: 2;
+	visibility: hidden;
+	border-radius: 5px;
+	width: 240px;
+	color: #ffffff;
+	top: -100px;
+	position: absolute;
+}
+
+#index .img-container .movie_info.show {
+	visibility: visible;
+}
+
+#index .img-container .movie_info ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+#index .img-container .movie_info ul li {
+	text-shadow: 0px 0px 2px #000;
+	letter-spacing: 4px;
+	padding: 5px 0px 5px 50px;
+	/*background-image: url(/images/index/movie_detail_bkrd.png);*/
+	margin: 5px 0px;
+}
+
+#index .img-container .movie_info ul li:hover {
+	cursor: pointer;
+}
+
+#index .movie-search-container {
+	color: #ffffff;
+	z-index: 5;
+	margin: 0px auto;
+	width: 445px;
+	position: relative;
+	text-align: center;
+}
+
+#index .movie-search {
+	text-shadow: 0 0 10px #00CCFF;
+	border-radius: 25px;
+	background: transparent;
+	font-style: italic;
+	color: #00CCFF;
+	margin-top: 10px;
+	font-size: 16px;
+	box-shadow: inset 0px 0px 12px #ffffff;
+	border: 1px solid #ffffff;
+	padding: 0px 20px;
+	height: 40px;
+	width: 400px
+}
+
+#index .movie-search-container.active .movie-search {
+	text-shadow: none;
+	/*background: url("/images/search_background.png");*/
+	font-style: normal;
+}
+
+#index .movie-search-container.active .search-output {
+	display: block;
+}
+
+#index .search-output {
+	display: none;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0 6px 10px #00002f;
+	text-align: left;
+	width: 100%;
+	left: 0px;
+	top: 54px;
+	position: absolute;
+	background-image: url(/images/search_background.png);
+	color: #ffffff;
+}
+
+#index .search-output ul {
+	list-style: none;
+}
+
+#index .search-output ul li {
+	border-bottom: dotted #0000af 1px;
+	position: relative;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+#index .search-output ul li:hover {
+	background-color: #000842;
+}
+
+#index .search-output ul li div {
+	letter-spacing: 4px;
+	left: 75px;
+	top: 20px;
+	position: absolute;
+}
+
+#index .search-output ul li.last {
+	border-radius: 0px 0px 5px 5px;
+	border-bottom: none;
+}
+
+#index .search-output ul li span {
+	color: #00CCFF;
+}
+
+#index .search-output ul li.whole-list {
+	background: #00008F;
+	border-bottom: none;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#index .search-output ul li.whole-list:hover {
+	border-radius: 0px 0px 5px 5px;
+}
+
+.searchbox-container {
+	padding-top: 20px;
+	overflow: hidden;
+	border-radius: 20px 20px 0px 0px;
+	bottom: 0px;
+	left: 50%;
+	height: 70px;
+	color: #ffffff;
+	z-index: 5;
+	margin-left: -250px;
+	width: 500px;
+	position: fixed;
+	text-align: center;
+	/*color: #00CCFF;*/
+}
+
+.searchbox-container .searchbox-background,
+.other-search-list .searchbox-background {
+	opacity: 0.8;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	background: #000;
+}
+
+.searchbox-container div.search-title {
+	position: relative;
+	z-index: 3;
+	margin: 10px 0px;
+	font-size: 16px;
+}
+
+.searchbox-container .searchbox {
+	letter-spacing: 7px;
+	color: #000000;
+	position: relative;
+	z-index: 3;
+	border-radius: 25px;
+	background: transparent;
+	font-style: italic;
+	margin-top: 10px;
+	font-size: 16px;
+	box-shadow: inset 0px 0px 50px #ffffff;
+	border: 2px inset #ffffff;
+	padding: 0px 20px;
+	height: 40px;
+	width: 400px
+}
+
+.searchbox-container .searchbox.active {
+	box-shadow: inset 0px 0px 10px #ffffff;
+	font-style: normal;
+	color: #00CCFF;
+	letter-spacing: 0px;
+}

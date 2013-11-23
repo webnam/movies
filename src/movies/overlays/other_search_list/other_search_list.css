@@ -1,0 +1,123 @@
+.other-search-list {
+	padding: 20px;
+	font-size: 11px;
+	color: #ffffff;
+	display: none;
+	margin-left: -320px;
+	z-index: 5;
+	left: 50%;
+	top: 50px;
+	position: fixed;
+	height: 85%;
+	width: 600px;
+}
+
+.other-search-list .content {
+	z-index: 3;
+	position: relative;
+	height: 80%;
+	overflow: scroll;
+}
+
+.other-search-list ul li {
+	overflow: hidden;
+	position: relative;
+	height: 60px;
+}
+
+.other-search-list ul li:hover {
+	cursor: pointer;
+}
+
+.other-search-list .button-container {
+	left: 65px;
+	top: 65px;
+	position: absolute;
+
+	/*float: right;*/
+}
+
+.other-search-list .header-container {
+	float: left;
+}
+
+.other-search-list .button-container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.other-search-list .button-container a {
+	letter-spacing: 2px;
+	margin-left: 50px;
+	float: left;
+	display: block;
+}
+
+.other-search-list .button-container a:first-child {
+	margin-left: 0px;
+}
+
+.other-search-list span.movie-title {
+	margin-left: 20px;
+	font-size: 16px;
+	letter-spacing: 4px;
+	top: -20px;
+	position: relative;
+}
+
+.other-search-list span.noresults {
+	font-size: 16px;
+	letter-spacing: 4px;
+	top: 0px;
+}
+
+.other-search-list span.movie-title span {
+	color: #00CCFF;
+}
+
+.other-search-list .torrents {
+	letter-spacing: 2px;
+	margin-left: 50px;
+	float: left;
+}
+
+.other-search-list .torrents a {
+	margin: 0px;
+	float: none;
+}
+
+.other-search-list div.arrow-container {
+	margin-left: 11px;
+	float: left;
+	overflow: hidden;
+	height: 18px;
+	width: 15px;
+	top: 11px;
+	position: relative;
+}
+
+.other-search-list div.arrow {
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	left: 0px;
+	top: -10px;
+	height: 15px;
+	width: 15px;
+	background: #ffffff;
+	position: relative;
+}
+
+.other-search-list .searchbox-background {
+	border-radius: 20px;
+	height: 85%;
+	opacity: 0.4;
+}
+
+.other-search-list .close {
+	left: 640px;
+	top: -25px;
+}
