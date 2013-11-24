@@ -95,17 +95,6 @@
 	top: 50%;
 }
 
-#index .img-container .movie_info {
-	height: 0px;
-	z-index: 2;
-	visibility: hidden;
-	border-radius: 5px;
-	width: 240px;
-	color: #ffffff;
-	top: -100px;
-	position: absolute;
-}
-
 #index .img-container .movie_info.show {
 	visibility: visible;
 }
@@ -121,20 +110,13 @@
 	color: #000000;
 }
 
-#index .img-container .movie_info ul li {
-	text-shadow: 0px 0px 2px #000;
-	letter-spacing: 4px;
-	padding: 5px 0px 5px 50px;
-	/*background-image: url(/images/index/movie_detail_bkrd.png);*/
-	margin: 5px 0px;
-}
-
 #index .img-container .movie_info ul li:hover {
 	background-image: url(/images/index/movie_detail_bkrd.png);
 	cursor: pointer;
 }
 
-#index .img-container .movie_info ul.dark li:hover a {
+#index .img-container .movie_info ul.dark li:hover a,
+#index .img-container .movie_info ul.dark li:hover input[type="submit"] {
 	text-shadow: none;
 	color: #ffffff;
 }
@@ -230,7 +212,7 @@
 }
 
 .searchbox-container {
-	padding-top: 20px;
+	padding-top: 10px;
 	overflow: hidden;
 	border-radius: 20px 20px 0px 0px;
 	bottom: 0px;
@@ -238,8 +220,8 @@
 	height: 70px;
 	color: #ffffff;
 	z-index: 5;
-	margin-left: -250px;
-	width: 500px;
+	margin-left: -240px;
+	width: 480px;
 	position: fixed;
 	text-align: center;
 	/*color: #00CCFF;*/
@@ -255,6 +237,10 @@
 	top: 0px;
 	position: absolute;
 	background: #000;
+}
+
+.searchbox-container .searchbox-background {
+	background: #ffffff;
 }
 
 .searchbox-container div.search-title {
@@ -282,8 +268,6 @@
 }
 
 .searchbox-container .searchbox.active {
-	box-shadow: inset 0px 0px 10px #ffffff;
 	font-style: normal;
-	color: #00CCFF;
 	letter-spacing: 0px;
 }

@@ -1,10 +1,13 @@
 <script type="text/html" id="html_movieslider">
 	<ul class="<%=Main.tpldata.scheme%>">
+		<li>Duration:<%=Main.tpldata.duration%> min</li>
 		<li><a class="show-trailer" href="#newMovie=<%=Main.tpldata.movieId%>">TRAILER</a></li>
 		<li><a href="<%=Main.tpldata.imdb.url%>" target="_blank">IMDB</a></li>
 		<li class="last">
-			<input value="ZIP CODE" />
-			<a href="<%=Main.tpldata.showtimes.url%>" target="_blank">GET SHOWTIMES</a>
+			<form id="get-showtimes">
+				<input value="ZIP CODE" type="text" url="<%=Main.tpldata.showtimes.url%>" />
+				<input type="submit" value="GET SHOWTIMES" />
+			</form>
 		</li>
 	</ul>
 </script>

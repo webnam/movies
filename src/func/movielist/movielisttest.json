@@ -1,5 +1,71 @@
 {
    "Movies":{
+      "dallas_buyers":{
+         "movieId":"dallas_buyers",
+         "moviename":"Dallas Buyers Club",
+         "newMovie":true,
+         "smallImage":"dallas_buyers_club_small.jpg",
+         "blurryImage":"dallas_buyers_club_blurry.jpg",
+         "largeImage":"dallas_buyers_club.jpg",
+         "trailer":"fvMPU0WaPcc",
+         "duration": "117",
+         "scheme": "dark",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/dallasbuyersclub_165717/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt0790636\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "free_birds":{
+         "movieId":"free_birds",
+         "moviename":"Free Birds",
+         "newMovie":true,
+         "smallImage":"free_birds_small.jpg",
+         "blurryImage":"free_birds_blurry.jpg",
+         "largeImage":"free_birds.jpg",
+         "trailer":"UhxSOkTFGvo",
+         "duration": "91",
+         "scheme": "",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/freebirds_163438/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt1621039\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
       "delivery_man":{
          "movieId":"delivery_man",
          "moviename":"Delivery Man",
@@ -8,6 +74,7 @@
          "blurryImage":"delivery_man_blurry.jpg",
          "largeImage":"delivery_man.jpg",
          "trailer":"yGAktL45XNQ",
+         "duration": "103",
          "scheme": "dark",
          "active_links":[
             "imdb"
@@ -40,7 +107,7 @@
          "blurryImage":"hunger_games_blurry.jpg",
          "largeImage":"hunger_games.jpg",
          "trailer":"EAzGXqJSDJ8",
-         "text":"Gravity Movie",
+         "duration": "146",
          "active_links":[
             "imdb"
          ],
@@ -72,6 +139,7 @@
          "blurryImage":"about_time_blurry.jpg",
          "largeImage":"about_time.jpg",
          "trailer":"T7A810duHvw",
+         "duration": "123",
          "text":"Gravity Movie",
          "active_links":[
             "imdb"
@@ -105,7 +173,7 @@
          "blurryImage":"bestman_blurry.jpg",
          "largeImage":"bestman.jpg",
          "trailer":"k6iNiJivOOQ",
-         "text":"Gravity Movie",
+         "duration": "123",
          "scheme": "dark",
          "active_links":[
             "imdb"
@@ -138,7 +206,7 @@
          "blurryImage":"12years_a_slave_blurry.jpg",
          "largeImage":"12years_a_slave.jpg",
          "trailer":"z02Ie8wKKRg",
-         "text":"Gravity Movie",
+         "duration": "134",
          "scheme": "dark",
          "active_links":[
             "imdb"
@@ -171,7 +239,7 @@
          "blurryImage":"diana_blurry.jpg",
          "largeImage":"diana.jpg",
          "trailer":"9VSUoxic5E4",
-         "text":"Gravity Movie",
+         "duration": "113",
          "active_links":[
             "imdb"
          ],
@@ -203,7 +271,7 @@
          "blurryImage":"last_vegas_blurry.jpg",
          "largeImage":"last_vegas.jpg",
          "trailer":"TvK3m0wJutI",
-         "text":"Gravity Movie",
+         "duration": "105",
          "scheme": "dark",
          "active_links":[
             "imdb"
@@ -236,7 +304,7 @@
          "blurryImage":"all_is_lost_blurry.jpg",
          "largeImage":"all_is_lost.jpg",
          "trailer":"Lk_R04LfUQU",
-         "text":"Gravity Movie",
+         "duration": "106",
          "active_links":[
             "imdb"
          ],
@@ -268,7 +336,7 @@
          "blurryImage":"thor2_blurry.jpg",
          "largeImage":"thor2.jpg",
          "trailer":"3bFZJ-3zNFg",
-         "text":"Gravity Movie",
+         "duration": "112",
          "active_links":[
             "imdb"
          ],
@@ -295,7 +363,7 @@
          "blurryImage":"fifth_estate_blurry.jpg",
          "largeImage":"fifth_estate.jpg",
          "trailer":"YQOiS_l_0Jk",
-         "text":"Gravity Movie",
+         "duration": "128",
          "active_links":[
             "imdb"
          ],
@@ -322,7 +390,7 @@
          "blurryImage":"enders_game_blurry.jpg",
          "largeImage":"enders_game.jpg",
          "trailer":"vP0cUBi4hwE",
-         "text":"Gravity Movie",
+         "duration": "114",
          "active_links":[
             "imdb"
          ],
@@ -350,7 +418,7 @@
          "blurryImage":"escape_blurry.jpg",
          "largeImage":"escape.jpg",
          "trailer":"CI4EjV_x_PQ",
-         "text":"Gravity Movie",
+         "duration": "115",
          "active_links":[
             "imdb"
          ],
@@ -377,7 +445,7 @@
          "blurryImage":"christman_candle_blurry.jpg",
          "largeImage":"christman_candle.jpg",
          "trailer":"1Uoi-RGQ1Fk",
-         "text":"Gravity Movie",
+         "duration": "115",
          "active_links":[
             "imdb"
          ],
@@ -404,7 +472,7 @@
          "blurryImage":"captain_phillips_blurry.jpg",
          "largeImage":"captain_phillips.jpg",
          "trailer":"_3ASoBrFGlc",
-         "text":"Gravity Movie",
+         "duration": "100",
          "active_links":[
             "imdb"
          ],
@@ -431,7 +499,7 @@
          "blurryImage":"bad_grandpa_blurry.jpg",
          "largeImage":"bad_grandpa.jpg",
          "trailer":"tctgUr147zA",
-         "text":"Gravity Movie",
+         "duration": "92",
          "active_links":[
             "imdb"
          ],
@@ -458,7 +526,7 @@
          "blurryImage":"the_counselor_blurry.jpg",
          "largeImage":"the_counselor.jpg",
          "trailer":"6ML50I0mVHY",
-         "text":"Gravity Movie",
+         "duration": "117",
          "active_links":[
             "imdb"
          ],
@@ -485,7 +553,7 @@
          "blurryImage":"cloudy2_blurry.jpg",
          "largeImage":"cloudy2.jpg",
          "trailer":"dNiVB_d_z4k",
-         "text":"Gravity Movie",
+         "duration": "95",
          "active_links":[
             "imdb"
          ],
@@ -512,7 +580,7 @@
          "blurryImage":"gravity_blurry.jpg",
          "largeImage":"gravity.jpg",
          "trailer":"OiTiKOy59o4",
-         "text":"Gravity Movie",
+         "duration": "91",
          "active_links":[
             "imdb"
          ],
@@ -544,7 +612,7 @@
          "largeImage":"armstrong_lie.jpg",
          "image":"",
          "trailer":"vx3KJn8r8y0",
-         "text":"Jack Ryan Movie",
+         "duration": "122",
          "active_links":[
             "imdb"
          ],
@@ -572,7 +640,7 @@
          "largeImage":"runner_runner.jpg",
          "image":"",
          "trailer":"8ztAypW5MRE",
-         "text":"Runner Movie",
+         "duration": "91",
          "active_links":[
             "imdb"
          ],
@@ -600,7 +668,7 @@
          "largeImage":"carrie.jpg",
          "image":"",
          "trailer":"SdoVioPv0fs",
-         "text":"Gravity Movie",
+         "duration": "100",
          "active_links":[
             "imdb"
          ],
@@ -628,7 +696,7 @@
          "largeImage":"prisoners.jpg",
          "image":"",
          "trailer":"bpXfcTF6iVk",
-         "text":"Jack Ryan Movie",
+         "duration": "153",
          "active_links":[
             "imdb"
          ],

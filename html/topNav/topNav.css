@@ -22,11 +22,12 @@
 	margin-top: 25px;
 	text-align: center;
 	letter-spacing: 3px;
-	font-size: 30px;
+	font-size: 12px;
 	list-style: none;	
 }
 
-#topNav li span {
+#topNav li div {
+	margin-bottom: 25px;
 	letter-spacing: 14px;
 	font-size: 20px;	
 }

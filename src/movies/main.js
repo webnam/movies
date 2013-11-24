@@ -6,7 +6,10 @@ var com_movies = com_movies || {},
 	Main = {
 		namespace: ""
 	,	overlayInstance: ""
-	,	instance: null 		
+	,	instance: null
+	,	CONSTANTS: {
+			FIND_OLDER_MOVIES: "FIND OLDER MOVIES"
+		}		
 	};
 
 com_movies.Main = (function(){
@@ -59,12 +62,13 @@ com_movies.Main = (function(){
 				
 		}
 	,	hideOverlay: function() {
+			$.bbq.removeState("newMovie");
 			$( ".overlay-background, ." + Main.overlayInstance ).fadeOut();
 			$( "." + Main.overlayInstance ).html( "" );
 			// $( ".background-blurry" ).fadeOut();
 			// $( "#index .content" ).css( "opacity", "1" );
 			$( ".searchbox-container .searchbox-background" ).animate({"opacity": "0.8"});
-			$( ".searchbox-container input" ).val("FIND YOUR MOVIE")
+			$( ".searchbox-container input" ).val(Main.CONSTANTS.FIND_OLDER_MOVIES)
 				.removeClass("active");
 				
 		}

@@ -31,19 +31,32 @@ com_movies.Main.overlays.Slider = ( function( global ){
 
 				$( this ).val( "" );
 			} );
-				
-			$( ".last a" ).on( "click", function( e ) {
-				e.stopPropagation();
-				e.preventDefault();
 
-				var _val = $( ".last input" ).val(),
-					_href = $(this).attr("href"),
-					_left = ( window.outerWidth / 2 ) - 350;
-					myWindow=window.open(_href + _val,'','width=700,height=600,scrollbars=yes,dialog=no,toolbar=no,location=no');
+			$("#get-showtimes").submit(function () {
+				var _val = $( ".last input[type='text']" ).val(),
+					_href = $(".last input[type='text']").attr("url"),
+					_left = ( window.outerWidth / 2 ) - 350,
+					myWindow;
+
+				$(this).find("input[type='submit']").val("GET SHOWTIMES");
+				myWindow = window.open(_href + _val,'','width=700,height=600,scrollbars=yes,dialog=no,toolbar=no,location=no');
 
 				myWindow.moveTo(_left, 0);
 				myWindow.focus();
-			} );
+			})
+				
+			// $( ".last a" ).on( "click", function( e ) {
+			// 	e.stopPropagation();
+			// 	e.preventDefault();
+
+			// 	var _val = $( ".last input" ).val(),
+			// 		_href = $(this).attr("href"),
+			// 		_left = ( window.outerWidth / 2 ) - 350;
+			// 		myWindow=window.open(_href + _val,'','width=700,height=600,scrollbars=yes,dialog=no,toolbar=no,location=no');
+
+			// 	myWindow.moveTo(_left, 0);
+			// 	myWindow.focus();
+			// } );
 
 		}
 	})

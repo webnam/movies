@@ -60,6 +60,9 @@ com_movies.Home = ( function() {
 
 					$( ".image" ).on( "click", _clickHanler )
 
+
+					// DO NOT REMOVE
+					// 
 					// var tmpItems = [];
 					// $.each( Main.data.Movies, function( key, val ) {
 					// 	if( val.newMovie ){
@@ -100,29 +103,18 @@ com_movies.Home = ( function() {
 						"height": "0px" 
 					} );
 
-					$.getJSON( "../src/func/movielist/movielisttest.json", function( data ) {
-						Main.tpldata = data.Movies[ _movieName ];
-						that.updateChild( "movie_info", "html_movieslider", Main.tpldata );
-					} );
+
+				Main.tpldata = Main.data.Movies[ _movieName ];
+				that.updateChild( "movie_info", "html_movieslider", Main.tpldata );
 
 				$( ".movie_info" ).addClass( "show" )
 					.animate( { "height": 100 + "px" }, 600, function(){
-						// $( this ).find( "a" ).hover(
-						// 	function() {
-						// 		$( this ).stop().animate( { "color": "#00ccff" } );
-						// 	},
-						// 	function() {
-						// 		$( this ).stop().animate( { "color": "#ffffff" } );
-						// 	}
-						// ).end()
-
 						that._movieSlider = new com_movies.Main.overlays.Slider();
 					});
 
-
 				e.stopPropagation();
-				$( ".image" ).removeClass( "active" )
-				$( ".blurry" ).fadeOut();
+				$( ".image.active" ).find(".blurry").fadeOut().end()
+					.removeClass( "active" );
 				$this.addClass( "active" )
 					.find( ".blurry" ).fadeIn( 800 );
 			}
@@ -169,17 +161,11 @@ com_movies.Home = ( function() {
 								  		}
 								  	}
 
-								  	if (_outputArray.length == 0) {
-										$(".other-search-list .content").html("<ul><li><div class='header-container'><span class='noresults'>NO MATCHING RESULTS TO DISPLAY</span></div></li></ul>");
-								  	}
-								  	else {
-									  	Main.outputArray = _outputArray;
-										Main.tpldata = Main.outputArray;
-										Main.overlayInstance = "other-search-list";
-										that.showOverlay( "html_otherSearchList", Main.tpldata );
-										that._movie = new com_movies.Main.overlays.otherSearchList();
-
-								  	}
+								  	Main.outputArray = _outputArray;
+									Main.tpldata = Main.outputArray;
+									Main.overlayInstance = "other-search-list";
+									that.showOverlay( "html_otherSearchList", Main.tpldata );
+									that._movie = new com_movies.Main.overlays.otherSearchList();
 
 								}
 								else {
@@ -202,26 +188,16 @@ com_movies.Home = ( function() {
 					} )
 					.on("blur", function () {
 						$(this).removeClass("active")
-							.val("FIND YOUR MOVIE");
+							.val(Main.CONSTANTS.FIND_OLDER_MOVIES);
 					});
 
 			$("input").on("keydown", function () {
 				Main.overlayInstance = "other-search-list";
 				$( ".background-blurry" ).fadeIn( 800 );
 				$( "#index .content" ).animate({"opacity": "0"});
-				$( ".searchbox-container .searchbox-background" ).animate({"opacity": "0.4"});
+				$( ".searchbox-container .searchbox-background" ).animate({"opacity": "0"});
 				$( "." + Main.overlayInstance ).fadeIn( 800 );
 			})
-
-			$( ".movie-search" ).on( "blur", function() {
-				// $( ".movie-search-container" ).removeClass( "active" )
-				// $( ".search-output" ).css( "display", "none" );
-				$( this ).attr( "value", "SEARCH FOR A MOVIE" )
-			} )	
-				.on( "focus", function() {
-					$( this ).attr( "value", "" )
-					$( ".movie-search-container" ).addClass( "active" );
-				} );	
 
 			$( ".movie-search-container" ).click( function( e ) {
 				e.stopPropagation();

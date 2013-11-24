@@ -5,7 +5,19 @@
 	height: 300px;
 }
 
-.movie_info .last input {
+.movie_info {
+	height: 0px;
+	z-index: 2;
+	visibility: hidden;
+	border-radius: 5px;
+	width: 240px;
+	color: #ffffff;
+	top: -100px;
+	position: absolute;
+}
+
+.movie_info .last input[type="text"] {
+	color: #ffffff;
 	/*text-shadow: 0px 0px 2px #000000;*/
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #FFFFFF;
@@ -13,6 +25,60 @@
     box-shadow: 0 0 21px #FFFFFF inset;
     padding: 5px;
     width: 65px;
+}
+
+.movie_info .dark .last input[type="text"] {
+	color: #000000;
+}
+
+.movie_info ul li:first-child {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	background: #000;
+}
+
+#index .img-container .movie_info ul li:first-child:hover {
+	cursor: default;
+}
+
+.movie_info ul li:first-child {
+	font-size: 12px;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	color: #FFFFFF;
+	background: #000;
+}
+
+.movie_info .last input[type="submit"] {
+	text-shadow: 0px 0px 4px #000000;
+	margin-top: 4px;
+	letter-spacing: 4px;
+	color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+}
+
+.movie_info .last input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.movie_info .dark .last input[type="submit"] {
+	text-shadow: 0px 0px 4px #FFFFFF;
+	color: #000000;
+}
+
+.movie_info ul li {
+	text-shadow: 0px 0px 2px #000;
+	letter-spacing: 4px;
+	padding: 0px 0px 0px 50px;
+	/*background-image: url(/images/index/movie_detail_bkrd.png);*/
+	margin: 5px 0px;
+}
+
+.movie_info ul li a {
+	padding: 5px 0px 5px 0px;
+	display: block;
 }
 
 .movie_info .last {
