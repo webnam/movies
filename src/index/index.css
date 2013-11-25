@@ -251,7 +251,7 @@
 }
 
 .searchbox-container .searchbox {
-	letter-spacing: 7px;
+	letter-spacing: 2px;
 	color: #000000;
 	position: relative;
 	z-index: 3;

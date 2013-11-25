@@ -8,7 +8,7 @@ var com_movies = com_movies || {},
 	,	overlayInstance: ""
 	,	instance: null
 	,	CONSTANTS: {
-			FIND_OLDER_MOVIES: "FIND OLDER MOVIES"
+			FIND_OLDER_MOVIES: "SEARCH FOR MOVIES TO RENT/BUY"
 		}		
 	};
 

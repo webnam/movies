@@ -1,12 +1,37 @@
-<!--#include virtual="/html/doc_start.html" -->
+<!-- #include virtual="/html/doc_start.html" -->
 
-		<title>LATEST MOVIES FOR YOU</title>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45900124-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+		<title>LATEST MOVIES RIGHT NOW | RENT/BUY MOVIES</title>
 		<meta name="description" content="Latest movies, Buy movie tickets, Know When The Latest Is Coming, Search for movies, Flixresh, Watch Trailer, Buy Ticket" />
 		<meta name="keywords" content="Movies, Latest movies, New Movies, Fresh Flix, Tickets, Flixresh.com, Movie showtimes, Rent, Download, Redbox, IMDB, Fandango" />
 
 		<link rel="stylesheet" href="/src/index/index.css" type="text/css">
 
-<!--#include virtual="/html/body_start.html" -->
+<!-- #include virtual="/html/body_start.html" -->
+
+		<link rel="stylesheet" href="/src/includes/includes.css" type="text/css">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="page">
 
 	<div id="index">
 
@@ -52,8 +77,63 @@
 			
 	</div>
 
-<!--#include virtual="/html/body_end.html" -->
+<!-- #include virtual="/html/body_end.html" -->
+
+				<div class="footer-container">
+					
+				</div>
+		
+			</div> <!-- #Page end -->
+
+			<div class="overlay-background"></div>
+
+			<div class="movie-trailer"></div>
+		
+			<div class="old-movie-trailer"></div>
+
+			<div class="other-search-list"></div>
+
+			<div class="background-blurry"></div>
+
+				<div class="searchbox-container">
+					<div class="searchbox-background"></div>
+					<!-- div class="search-title">FIND YOUR MOVIE</div -->
+					<form>
+						<input value="" type="text" class="searchbox" name="search" autocomplete="off" />
+					</form>
+					<!-- div class="search-output"></div -->
+				</div>
+			
+		</div> <!-- #Wrapper end -->
+
+	</body>
+	<span>		
+		<!--#include virtual="/src/includes/includes.html" -->
+	</span>
+	<span>
+		<script type="text/javascript" src="/src/includes/includes.js"></script>
+	</span>
 		
 	<script type="text/javascript" src="/src/index/index.js"></script>
 	
-<!--#include virtual="/html/doc_end.html" -->
+<!-- #include virtual="/html/doc_end.html" -->
+
+
+	<script type="text/javascript">
+
+		Main.handler = ( function( obj ) {
+			var _instance = window,
+				objArr = obj.split( "." ),
+				len = objArr.length,
+				i;
+
+			for ( i = 0; i < len; i++ ) {
+				_instance = _instance[ objArr[ i ] ];
+			};
+
+			Main.instance = new _instance();
+		}) ( Main.namespace );
+	</script>
+
+</html>
+

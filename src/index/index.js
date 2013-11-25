@@ -211,6 +211,8 @@ com_movies.Home = ( function() {
 				$( ".blurry" ).fadeOut();
 			} )
 
+			$(".searchbox").val(Main.CONSTANTS.FIND_OLDER_MOVIES);
+			
 			var movie = $.bbq.getState("newMovie");
 			if (typeof movie != "undefined" && movie != "") {
 				$.getJSON( "../src/func/movielist/movielisttest.json", function( data ) {
