@@ -25,21 +25,8 @@
 							for ( j = 0; j < currMovie.active_links.length; j++ ) {
 								var _linkName = currMovie.active_links[j],
 									_tmpObj = currMovie[currMovie.active_links[j]];
-								if ( _linkName == "torrent" ) {
 						%>
-									<div class="torrents">Torrents
-						<%
-									var _nr = 0;
-									for ( var _t = 0; _t < _tmpObj.length; _t++ ) {
-						%>				
-										<a href="<%=_tmpObj[_t].url%>" target="_blank"><%=_tmpObj[_t].name%> <%=_t + 1%></a>
-						<%			} %>
-									</div>
-						<%		}
-								else {
-						%>
-									<a href="<%=_tmpObj.url%>" target="_blank"><%=_tmpObj.name%></a>
-								<% } %>
+								<a href="<%=_tmpObj.url%>" target="_blank"><%=_tmpObj.name%></a>
 						<% } %>
 					</div>
 				</li>
