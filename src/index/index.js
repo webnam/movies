@@ -63,23 +63,23 @@ com_movies.Home = ( function() {
 
 					// // DO NOT REMOVE
 					
-					// var tmpItems = [];
-					// $.each( Main.data.Movies, function( key, val ) {
-					// 	if( val.newMovie ){
-					// 		nr = ( nr >= 4 ) ? 1 : nr = nr + 1;
-					// 		var _class = ""
+					var tmpItems = [];
+					$.each( Main.data.Movies, function( key, val ) {
+						if( val.newMovie ){
+							nr = ( nr >= 4 ) ? 1 : nr = nr + 1;
+							var _class = ""
 
-					// 		if( nr == 1 ) {
-					// 			_class = "first";
-					// 		}
-					// 		else if( nr == 4 ) {
-					// 			_class = "last";
-					// 		}
+							if( nr == 1 ) {
+								_class = "first";
+							}
+							else if( nr == 4 ) {
+								_class = "last";
+							}
 
-					// 		tmpItems.push( val.moviename + "<br />" );						
-					// 	}
-					// });
-					// $( ".container" ).append( tmpItems.join( "" ) );
+							tmpItems.push( val.moviename + "<br />" );						
+						}
+					});
+					$( ".container" ).append( tmpItems.join( "" ) );
 
 			    }
 

@@ -1,5 +1,134 @@
 {
    "Movies":{
+      "out_of_the_furnace":{
+         "movieId":"out_of_the_furnace",
+         "moviename":"Out of the Furnace",
+         "newMovie":true,
+         "smallImage":"out_of_the_furnace_small.jpg",
+         "blurryImage":"out_of_the_furnace_blurry.jpg",
+         "largeImage":"out_of_the_furnace.jpg",
+         "trailer":"plkAY3xX2sQ",
+         "duration": "93",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/outofthefurnace_156460/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt1206543\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "blacknativity":{
+         "movieId":"blacknativity",
+         "moviename":"Black Nativity",
+         "newMovie":true,
+         "smallImage":"black_nativity_small.jpg",
+         "blurryImage":"black_nativity_blurry.jpg",
+         "largeImage":"black_nativity.jpg",
+         "trailer":"jq3ZY9gain4",
+         "duration": "93",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/blacknativity_163441/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt1425922\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "frozen":{
+         "movieId":"frozen",
+         "moviename":"Frozen",
+         "newMovie":true,
+         "smallImage":"frozen_small.jpg",
+         "blurryImage":"frozen_blurry.jpg",
+         "largeImage":"frozen.jpg",
+         "trailer":"FLzfXQSPBOg",
+         "scheme":"dark",
+         "duration": "117",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/frozen2013_155547/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt2294629\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "homefront":{
+         "movieId":"homefront",
+         "moviename":"Homefront",
+         "newMovie":true,
+         "smallImage":"homefront_small.jpg",
+         "blurryImage":"homefront_blurry.jpg",
+         "largeImage":"homefront.jpg",
+         "trailer":"tjSOj8b804U",
+         "duration": "117",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/homefront_165718/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt2312718\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
       "dallas_buyers":{
          "movieId":"dallas_buyers",
          "moviename":"Dallas Buyers Club",
