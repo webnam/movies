@@ -26,7 +26,8 @@
 	list-style: none;	
 }
 
-#topNav li div {
+#topNav li h1 {
+	font-weight: 300;
 	margin-bottom: 25px;
 	letter-spacing: 14px;
 	font-size: 20px;	
