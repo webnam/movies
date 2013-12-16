@@ -1,5 +1,70 @@
 {
    "Movies":{
+      "madea_christmas":{
+         "movieId":"madea_christmas",
+         "moviename":"Tyler Perry's A Madea Christmas",
+         "newMovie":true,
+         "smallImage":"madea_christmas_small.jpg",
+         "blurryImage":"madea_christmas_blurry.jpg",
+         "largeImage":"madea_christmas.jpg",
+         "trailer":"2zFenzWARtc",
+         "scheme": "dark",
+         "duration": "105",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/tylerperrysamadeachristmas_162605/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt2609758\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "hobbit":{
+         "movieId":"hobbit",
+         "moviename":"The Hobbit: The Desolation of Smaug",
+         "newMovie":true,
+         "smallImage":"hobbit_small.jpg",
+         "blurryImage":"hobbit_blurry.jpg",
+         "largeImage":"hobbit.jpg",
+         "trailer":"OPVWy1tFXuc",
+         "duration": "161",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/thehobbit:thedesolationofsmaug_158474/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt1170358\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
       "out_of_the_furnace":{
          "movieId":"out_of_the_furnace",
          "moviename":"Out of the Furnace",
