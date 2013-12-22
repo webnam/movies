@@ -18,6 +18,8 @@ com_movies.Home = ( function() {
 			,	that = this
 			;
 
+			
+
 			$( "body" ).backstretch( "/images/main_background2.jpg" );
 			$( ".background-blurry" ).backstretch( "/images/main_background2_blurry.jpg" );
 

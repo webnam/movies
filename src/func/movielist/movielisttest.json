@@ -1,5 +1,70 @@
 {
    "Movies":{
+      "mr_banks":{
+         "movieId":"mr_banks",
+         "moviename":"Saving Mr. Banks",
+         "newMovie":true,
+         "smallImage":"mr_banks_small.jpg",
+         "blurryImage":"mr_banks_blurry.jpg",
+         "largeImage":"mr_banks.jpg",
+         "trailer":"a5kYmrjongg",
+         "scheme":"dark",
+         "duration": "125",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/savingmr.banks_159710/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt2140373\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "american_hustle":{
+         "movieId":"american_hustle",
+         "moviename":"American Hustle",
+         "newMovie":true,
+         "smallImage":"american_hustle_small.jpg",
+         "blurryImage":"american_hustle_blurry.jpg",
+         "largeImage":"american_hustle.jpg",
+         "trailer":"ST7a1aK_lG0",
+         "duration": "138",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/americanhustle_164469/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt1800241\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
       "madea_christmas":{
          "movieId":"madea_christmas",
          "moviename":"Tyler Perry's A Madea Christmas",
