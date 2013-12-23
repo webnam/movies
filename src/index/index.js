@@ -47,7 +47,7 @@ com_movies.Home = ( function() {
 							}
 
 							items.push( "<div id='" + key + "' class='image " + _class + "'><img src='/images/movies/" + 
-								val.largeImage + "' /><img src='/images/movies/" + val.blurryImage + "' class='blurry' /><div><div class='title'>" + val.moviename + "</div></div></div>" );						
+								val.largeImage + "' alt='" + val.moviename + "' /><img src='/images/movies/" + val.blurryImage + "' class='blurry' /><div><div class='title'>" + val.moviename + "</div></div></div>" );						
 						}
 					});
 
