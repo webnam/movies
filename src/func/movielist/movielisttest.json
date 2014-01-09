@@ -1,5 +1,166 @@
 {
    "Movies":{
+      "wolf_of_wall_street":{
+         "movieId":"wolf_of_wall_street",
+         "moviename":"The Wolf of Wall Street",
+         "newMovie":true,
+         "smallImage":"wolf_of_wall_street_small.jpg",
+         "blurryImage":"wolf_of_wall_street_blurry.jpg",
+         "largeImage":"wolf_of_wall_street.jpg",
+         "trailer":"pabEtIERlic",
+         "duration": "180",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/thewolfofwallstreet2013_163440/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt0993846\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "grudge_match":{
+         "movieId":"grudge_match",
+         "moviename":"Grudge Match",
+         "newMovie":true,
+         "smallImage":"grudge_match_small.jpg",
+         "blurryImage":"grudge_match_blurry.jpg",
+         "largeImage":"grudge_match.jpg",
+         "trailer":"1bQSOBJCPQE",
+         "duration": "113",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/grudgematch_162604/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt1661382\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "believe":{
+         "movieId":"believe",
+         "moviename":"Justin Bieber's Believe",
+         "newMovie":true,
+         "smallImage":"believe_small.jpg",
+         "blurryImage":"believe_blurry.jpg",
+         "largeImage":"believe.jpg",
+         "trailer":"AZ4y7czmOdQ",
+         "duration": "92",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/justinbiebersbelieve_169400/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt3165608\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "anchorman_two":{
+         "movieId":"anchorman_two",
+         "moviename":"Anchorman 2: The Legend Continues",
+         "newMovie":true,
+         "smallImage":"anchorman2_small.jpg",
+         "blurryImage":"anchorman2_blurry.jpg",
+         "largeImage":"anchorman2.jpg",
+         "trailer":"Elczv0ghqw0",
+         "duration": "119",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/anchorman2:thelegendcontinues_169620/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt1229340\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
+      "walter_mitty":{
+         "movieId":"walter_mitty",
+         "moviename":"The Secret Life of Walter Mitty",
+         "newMovie":true,
+         "smallImage":"walter_mitty_small.jpg",
+         "blurryImage":"walter_mitty_blurry.jpg",
+         "largeImage":"walter_mitty.jpg",
+         "trailer":"kGWO2w0H2V8",
+         "scheme":"dark",
+         "duration": "114",
+         "active_links":[
+            "imdb"
+         ],
+         "showtimes": {
+            "name": "GET SHOWTIME",
+            "url": "http://www.fandango.com/thesecretlifeofwaltermitty2013_98147/movietimes?location="
+         },
+         "amazon": {
+            "class": "hide"
+         },
+         "redbox": {
+            "class": "hide"
+         },
+         "imdb":{
+            "name":"IMDB",
+            "url":"http:\/\/www.imdb.com\/title\/tt0359950\/?ref_=nv_sr_1"
+         },
+         "cinema":{
+            "Cinemark":{
+               "place":"NEIGHBOORHOOD"
+            }
+         }
+      },
       "mr_banks":{
          "movieId":"mr_banks",
          "moviename":"Saving Mr. Banks",
